@@ -1,10 +1,9 @@
 require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
-const cors  = require('cors') 
+const cors  = require('cors')
 const app = express()
 const PORT = process.env.PORT
-const mongoose = require('mongoose')
 const Person = require('./model/person')
 
 app.use(express.static('dist'))
